@@ -218,8 +218,8 @@ function initializeMap2() {
         const el = document.createElement('div');
         el.id = 'marker';
         el.style.backgroundImage = `url(${chapters[chapterName].image})`;
-        el.style.width = '50px'; // Adjust the width of the marker
-        el.style.height = '50px'; // Adjust the height of the marker
+        el.style.width = '180px'; // Adjust the width of the marker
+        el.style.height = '169px'; // Adjust the height of the marker
 
         // Add the new marker with text popup
         new mapboxgl.Marker(el)
