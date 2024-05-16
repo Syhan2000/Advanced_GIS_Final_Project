@@ -235,19 +235,21 @@ function initializeMap2() {
         activeChapterName = chapterName;
     }
 
+    var scrollableDiv = document.getElementById('features');
     // Function to check if an element is on screen
     function isElementOnScreen(id) {
         const element = document.getElementById(id);
         const bounds = element.getBoundingClientRect();
-        return bounds.top < window.innerHeight && bounds.bottom > 0;
+        return (bounds.top < window.innerHeight) && (bounds.bottom >400);
     }
 
     // Check which chapter is on screen on scroll
-    window.addEventListener('scroll', () => {
+    scrollableDiv.addEventListener('scroll', function(event) {
         for (const chapterName in chapters) {
             if (isElementOnScreen(chapterName)) {
                 setActiveChapter(chapterName);
                 break;
+
             }
         }
     });
