@@ -1,0 +1,150 @@
+/* Common styles */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* First page styles */
+#page1 {
+    display: flex;
+}
+
+#sidebar {
+    width: 360px;
+    padding: 20px;
+    background-color: #ffe6e6;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#map1 {
+    flex-grow: 1;
+    height: 100vh;
+}
+
+h1 {
+    color: #cc0000;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #ff6666;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e60000;
+}
+
+.info {
+    display: none;
+    padding: 10px;
+    background-color: #ffe6e6;
+    margin: 10px 0;
+    border: 1px solid #cc0000;
+}
+
+/* Second page styles */
+#page2 {
+    display: none;
+}
+
+#map2 {
+    position: fixed;
+    width: 66.67%;
+    height: 100%;
+}
+
+#features {
+    width: 33.33%;
+    margin-left: 66.67%;
+    font-family: sans-serif;
+    overflow-y: scroll;
+    background-color: #f7c6c6;
+}
+
+section {
+    padding: 25px 50px;
+    line-height: 25px;
+    border-bottom: 1px solid #f7dbdb;
+    opacity: 0.25;
+    font-size: 13px;
+}
+
+section.active {
+    opacity: 1;
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 200px;
+}
+
+section img {
+    display: block;
+    margin: 10px 0;
+    max-width: 100%;
+    width: 75%;
+    height: auto;
+}
+
+#marker {
+    background-size: cover;
+    width: 180px;
+    height: 160px;
+    border-radius: 300%;
+    cursor: pointer;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+#info-box {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(243, 222, 222);
+    border: 1px solid rgb(107, 0, 0);
+    z-index: 1;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+/* Toggle button styles */
+.toggle-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ff6666;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.toggle-button:hover {
+    background-color: #e60000;
+}
