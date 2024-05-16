@@ -105,14 +105,14 @@ section img {
 
 #marker {
     background-size: cover;
-    width: 180px;
-    height: 160px;
-    border-radius: 300%;
+    width: 360px;
+    height: 270px;
+    border-radius: 900%;
     cursor: pointer;
 }
 
 .mapboxgl-popup {
-    max-width: 200px;
+    max-width: 300px;
 }
 
 #info-box {
